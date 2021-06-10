@@ -28,6 +28,17 @@ const productSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'Category',
     required: true
+  },
+  addDate: {
+    type: Date, 
+    default: Date.now
+  },
+  expiry: {
+    type: Date, 
+    default: Date.now
+  },
+  userId: {
+    type: String
   }
 });
 
